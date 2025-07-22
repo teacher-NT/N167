@@ -1,3 +1,9 @@
-print("Github darsi")
+a = 3
+b = 5
 
-print("Davom etamiz")
+if a < b:
+    print("Python")
+else:
+    print("Github")
+
+print("Hello")
