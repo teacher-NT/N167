@@ -1,11 +1,5 @@
-a = 6
-b = 9
+a = 1
 
-if not a < b or b%2==0:
-    print("Python")
-elif a%2 == 0:
-    print("JavaScript")
-else:
-    print("Github")
-
-print("Hello")
+while a <= 10:
+    print(a)
+    a += 1
