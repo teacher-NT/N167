@@ -1,14 +1,12 @@
 import os
 os.system("cls")
 
-my_tuple = (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15)
+my_tuple = ('apple', 'google', 'tesla', 'meta', 'nasa')
 
-# print(my_tuple[3:10:2])
+# if 'tesla' in my_tuple:
+#     print('Tesla bor')
+# else:
+#     print(my_tuple)
 
-# print(my_tuple[-1])
-
-# print(my_tuple[::-1])
-
-# print(my_tuple[:5])
-
-# print(my_tuple[3:7])
+# for i in my_tuple:
+#     print(i)
