@@ -1,9 +1,10 @@
 import os
 os.system("cls")
 
-my_tuple = ('apple', 'google', 'tesla', 'meta', 'nasa', 1,2,3,4,5)
+lst = [1,2,3,4,5,6,7]
 
-print(len(my_tuple))
-
-matn = 'Bugun havo kechagidan issiq'
-print(len(matn))
+lst[4] = 55
+print(lst)
+# print(lst[3])
+# print(lst[:5])
+# print(lst[2:])
