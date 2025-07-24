@@ -1,20 +1,12 @@
 import os
 os.system("cls")
 
-for i in range(10):
-    print(i, end=" ")
+my_tuple = ("Kamron", 12, 1.70, 65)
 
-print()
+print(my_tuple)
 
-for i in range(5, 10):
-    print(i, end=" ")
+print(my_tuple[0])
 
-print()
+my_tuple[0] = "Sardor"
 
-for i in range(5, 50, 10):
-    print(i, end=" ")
-
-print()
-
-for i in range(10,0, -1):
-    print(i, end=" ")
+print(my_tuple)
