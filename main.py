@@ -1,35 +1,42 @@
 import os
 os.system("cls")
 
-lst = [8,6,3,25,1,4,2,5,7]
+myset = {4,7,2,1,3,5,6,8,9,10}
+myset2 = {4,5,6,7,8,9}
 
-# lst.append(11)
-# lst.append(['a','b','c'])
-# print(lst)
+# myset.update(myset2)
+# myset3 = myset.union(myset2)
 
-# lst.insert(4,"salom")
-# print(lst)
+# myset3 = myset.intersection(myset2)
+# myset.intersection_update(myset2)
 
-# lst2 = [99,88,77]
-# lst.extend(lst2)
-# print(lst)
+# myset3 = myset.difference(myset2)
+# myset.difference_update(myset2)
 
-# lst.remove(25)
-# print(lst)
+# myset3 = myset.symmetric_difference(myset2)
+# myset.symmetric_difference_update(myset2)
 
-# a = lst.pop(3)
-# print(a)
-# print(lst)
+# print(myset2.issubset(myset))
 
-# lst.clear()
-# print(lst)
+# print(myset2.issuperset(myset))
 
-# lst.sort(reverse=True)
-# print(lst)
-
-# lst2 = lst.copy()
-# lst2 = lst
-# lst2[2] = "Bugun sening kuning"
-# print(lst2, lst, sep='\n')
+# print(myset3)
+# print(myset)
 
 
+# myset = {1,0,True,False}
+# print(myset)
+
+
+
+
+
+
+
+
+
+
+
+
+# print(myset[2])
+# myset[1] = 15
