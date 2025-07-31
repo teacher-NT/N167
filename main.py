@@ -1,34 +1,16 @@
 import os
 os.system("cls")
 
-car = {
-    "brand": "BMW",
-    "model": "M8",
-    "price": 215000,
-    "speed": 330,
-    "mileage": 0,
-    "year": 2023,
-}
+def salom_ber():
+    print("Salom hammaga")
 
-# print(car['brant'])
-# print(car.get('bran', f"Xato kalit, {car.keys()}"))
+def func(a,b,c):
+    d = a+b+c
+    e = (a+b+c)/3
+    f = a*b*c
+    h = a-b-c
+    return d, e, f, h
 
-# print(car.keys())
+*n, m = func(5,6,7)
+print(n, m)
 
-# print(car.values())
-
-# car.pop('year')
-# print(car)
-
-# print(car.items())
-# for k,q in car.items():
-#     print(k, q)
-
-# car.popitem()
-# print(car)
-
-# car['price'] = 88000
-# car["mileage"] = 4000
-# car['color'] = 'red'
-car.update({"price": 88000, 'mileage':4000, 'color':'red'})
-print(car)
