@@ -1,22 +1,22 @@
 import os
 os.system("cls")
 
-# import random as rd
+import cv2
+import cv2.data
 
-# print(rd.randint(1,100))
-# print(rd.uniform(1,10))
+model = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
-# ismlar = ['Mansur', 'Jamshid', 'Davlatbek', 'Shohrux', 'Jaloliddin']
-# print(rd.choice(ismlar))
-# print(rd.choices(ismlar, k=3))
-# rd.shuffle(ismlar)
-# print(ismlar)
-# print(rd.sample(ismlar, k=3))
+camera = cv2.VideoCapture(0)
+while True:
+    is_valid, image = camera.read()
+    if is_valid:
+        faces = model.detectMultiScale(image, 1.1, 4, minSize=(30,30))
+        for face in faces:
+            x,y,w,h = face
+            cv2.rectangle(image, (x,y), (x+w, y+h), color=(12,27,240), thickness=2)
+        cv2.imshow('Kamera', image)
+    else:
+        print("Kamerada nosozlik")
 
-
-
-# print(os.getcwd())
-# os.mkdir("Test papka")
-# os.rmdir("Test papka")
-# os.rename("N167/image.png", "N167/rasm.jpg")
-# os.remove("N167/rasm.jpg")
+    if cv2.waitKey(1) & 0xFF == 32:
+        break
