@@ -1,20 +1,22 @@
 import os
 os.system("cls")
 
-# def func(*a):
-#     print(sum(a))
+# import random as rd
 
-# func(1,2,3,4,5,6,7,8,9)
+# print(rd.randint(1,100))
+# print(rd.uniform(1,10))
 
-# def func2(**person):
-#     print(person['ism'])
+# ismlar = ['Mansur', 'Jamshid', 'Davlatbek', 'Shohrux', 'Jaloliddin']
+# print(rd.choice(ismlar))
+# print(rd.choices(ismlar, k=3))
+# rd.shuffle(ismlar)
+# print(ismlar)
+# print(rd.sample(ismlar, k=3))
 
-# func2(ism='Jamshid', yosh=23, manzil='Sergili')
 
 
-# def func3(a,b):
-#     return a+b
-
-func3 = lambda a,b : a+b
-
-print(func3(4,6))
+# print(os.getcwd())
+# os.mkdir("Test papka")
+# os.rmdir("Test papka")
+# os.rename("N167/image.png", "N167/rasm.jpg")
+# os.remove("N167/rasm.jpg")
