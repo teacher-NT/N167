@@ -1,13 +1,43 @@
 import os
 os.system("cls")
 
+class Person:
+    def __init__(self,n,s,a):
+        self.name = n
+        self.surname = s
+        self.age = a
 
-f = {
-    "olma": [13000, 14000, 15000],
-    "anor": [19000, 22000, 24000, 15000],
-    "gilos": [6000, 9000, 5000, 4000],
-    "banan": [30000, 28000]
-}
+    def __str__(self):
+        return f"{self.name} {self.surname}"
+    
+    def __gt__(self, obj):
+        return self.age > obj.age
+    
+    def __lt__(self, obj):
+        return self.age < obj.age
+    
+    def __eq__(self, obj):
+        return self.age == obj.age
+    
+    def __add__(self, obj):
+        return self.age + obj
+    
+    def __sub__(self, obj):
+        return self.age - obj
+    
+    def __mul__(self, obj):
+        return self.age * obj
+    
+    def __truediv__(self, obj):
+        return self.age / obj
 
-for i in f:
-    print(f"{i}:", int(sum(f[i])/len(f[i])))
+    
+p1 = Person("Ali", "Valiev", 19)
+p2 = Person("Sherzod", "Ochilov", 22)
+davlatbek = Person("Davlatbek", "Zokirov", 22)
+
+print(p1 + 10)
+print(p1 - 5)
+print(p1 * 2)
+print(p1 / 9)
+
