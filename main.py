@@ -30,14 +30,38 @@ class Person:
     
     def __truediv__(self, obj):
         return self.age / obj
+    
+    def __len__(self):
+        return len(self.name+self.surname)
+    
+    def __getitem__(self, n):
+        if n == 'name':
+            return self.name
+        elif n == 'surname':
+            return self.surname
+        elif n == 'age':
+            return self.age
+        else:
+            return "KeyError"
+        
+    def __setitem__(self, n, m):
+        if n == 'name':
+            self.name = m
+        elif n == 'surname':
+            self.surname = m
+        elif n == 'age':
+            self.age = m
+        else:
+            return "KeyError"
 
     
 p1 = Person("Ali", "Valiev", 19)
 p2 = Person("Sherzod", "Ochilov", 22)
-davlatbek = Person("Davlatbek", "Zokirov", 22)
 
-print(p1 + 10)
-print(p1 - 5)
-print(p1 * 2)
-print(p1 / 9)
+p1['name'] = "Dilshod"
+print(p1)
+
+# print(len(p1))
+
+
 
